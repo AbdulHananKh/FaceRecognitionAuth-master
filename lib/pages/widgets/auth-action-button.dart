@@ -65,6 +65,7 @@ class _AuthActionButtonState extends State<AuthActionButton> {
   String _predictUser() {
     String userAndPass = _faceNetService.predict();
     return userAndPass ?? null;
+
   }
 
 
@@ -140,6 +141,8 @@ class _AuthActionButtonState extends State<AuthActionButton> {
               ? Container(
                   child: Text(
                     'Welcome back, ' + predictedUser.user + '.',
+
+
                     style: TextStyle(fontSize: 20),
                   ),
                 )
